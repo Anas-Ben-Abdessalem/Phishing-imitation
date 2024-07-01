@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Awareness</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <img src="hacked-hack.gif" alt="Hacked" class="background-gif">
+        <div id="msg">لقد تم اختراقك</div>
+        <div class="message">
+            <p>    هذه كانت مجرد مظاهرة لقوة هجوم التصيد الاحتيالي (فيشينج). 🛡️ جهازك لم يتم اختراقه.🔒 أنت لم يتم اختراقك. 
+                  .مجرد نقر الرابط والدخول إلى الموقع لن يضرك في معضم الأحيان ولكن يجب عليك من أتأكد من صحة الرابط في أعلى الصفحة وتجنب إعطاء معلومات حساسة إلا عند التأكد من هوية المرسل
+                   هنا قد نجحت في كسب ثقتك وهذا مايفعله الهاكر يحاول كسب ثقتك عن طريق اهمك بينه شخصٌ ما يريد مصلحتك أو شركة تحدثك عن عطلٍ بحسابك ويطلب منك نقر رابط ما وإدخال بياناتك فيه </p>
+        </div>
+    </div>
+    <script>
+       function toggleVisibility() {
+    const element = document.getElementById('msg');
+    element.classList.toggle('hidden');
+    console.log(element.classList);
+}
+
+// Toggle visibility every 1 seconds
+setInterval(toggleVisibility, 1000);
+    
+        setTimeout(function() {
+            document.querySelector('.message').style.opacity = '1';
+        }, 6000);
+    </script>
+</body>
+</html>
